@@ -1,0 +1,58 @@
+//GET All Details API-1
+//API-1
+
+GET http://localhost:3000/movies/
+
+### 
+
+//POST New Data API-2
+//API-2
+
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldbl"
+}
+
+###
+
+//GET Movie Based on MovieID (id's start from 46 to 120)
+//API-3
+
+GET http://localhost:3000/movies/48/
+
+###
+
+//PUT Update Existing Movie Data
+//API-4
+
+PUT http://localhost:3000/movies/47/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+
+###
+
+//API-5
+//DELETE Existig Movie Data 
+DELETE http://localhost:3000/movies/77/
+
+###
+
+//API-6
+//GET ALL DIRECTORS DETAILS 
+GET http://localhost:3000/directors/
+
+###
+
+//API-7
+//GET ALL DIRECTOR MOVIES (enter only 1 to 46)
+//Note id's DELETED 
+GET http://localhost:3000/directors/8/movies/
